@@ -1,0 +1,951 @@
+Premier: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0524
+Autoencoder Epoch 2/10, Loss: 0.0247
+Autoencoder Epoch 3/10, Loss: 0.0201
+Autoencoder Epoch 4/10, Loss: 0.0180
+Autoencoder Epoch 5/10, Loss: 0.0169
+Autoencoder Epoch 6/10, Loss: 0.0162
+Autoencoder Epoch 7/10, Loss: 0.0156
+Autoencoder Epoch 8/10, Loss: 0.0151
+Autoencoder Epoch 9/10, Loss: 0.0146
+Autoencoder Epoch 10/10, Loss: 0.0142
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.765 (sigma = 0.799)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.963
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.974
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.948
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.029
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.987
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.161
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 0.993
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.938
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2438, Train acc = 0.9240 | Val loss = 0.0689, Val acc = 0.9801
+Epoch 2: Train loss = 0.1090, Train acc = 0.9663 | Val loss = 0.0539, Val acc = 0.9832
+Epoch 3: Train loss = 0.0860, Train acc = 0.9733 | Val loss = 0.0438, Val acc = 0.9855
+Epoch 4: Train loss = 0.0743, Train acc = 0.9770 | Val loss = 0.0372, Val acc = 0.9886
+Epoch 5: Train loss = 0.0677, Train acc = 0.9790 | Val loss = 0.0542, Val acc = 0.9837
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2137, Train acc = 0.9337 | Val loss = 0.0912, Val acc = 0.9738
+Epoch 2: Train loss = 0.0756, Train acc = 0.9770 | Val loss = 0.0599, Val acc = 0.9830
+Epoch 3: Train loss = 0.0543, Train acc = 0.9830 | Val loss = 0.0550, Val acc = 0.9842
+Epoch 4: Train loss = 0.0431, Train acc = 0.9867 | Val loss = 0.0518, Val acc = 0.9851
+Epoch 5: Train loss = 0.0373, Train acc = 0.9884 | Val loss = 0.0410, Val acc = 0.9884
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4391, Train acc = 0.8594 | Val loss = 0.1202, Val acc = 0.9632
+Epoch 2: Train loss = 0.1972, Train acc = 0.9395 | Val loss = 0.0835, Val acc = 0.9764
+Epoch 3: Train loss = 0.1549, Train acc = 0.9517 | Val loss = 0.0696, Val acc = 0.9787
+Epoch 4: Train loss = 0.1330, Train acc = 0.9589 | Val loss = 0.0688, Val acc = 0.9798
+Epoch 5: Train loss = 0.1196, Train acc = 0.9627 | Val loss = 0.0736, Val acc = 0.9785
+
+Test accuracy FULL       : 0.977
+Test accuracy OPTIMIZED  : 0.988
+Test accuracy RANDOM-HALF: 0.977
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deuxième: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0543
+Autoencoder Epoch 2/10, Loss: 0.0249
+Autoencoder Epoch 3/10, Loss: 0.0196
+Autoencoder Epoch 4/10, Loss: 0.0179
+Autoencoder Epoch 5/10, Loss: 0.0170
+Autoencoder Epoch 6/10, Loss: 0.0163
+Autoencoder Epoch 7/10, Loss: 0.0157
+Autoencoder Epoch 8/10, Loss: 0.0152
+Autoencoder Epoch 9/10, Loss: 0.0148
+Autoencoder Epoch 10/10, Loss: 0.0145
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 21.245 (sigma = 0.742)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.975
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.982
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.989
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.005
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.972
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.214
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.110
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.896
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2437, Train acc = 0.9240 | Val loss = 0.0624, Val acc = 0.9828
+Epoch 2: Train loss = 0.1030, Train acc = 0.9678 | Val loss = 0.0550, Val acc = 0.9831
+Epoch 3: Train loss = 0.0812, Train acc = 0.9747 | Val loss = 0.0503, Val acc = 0.9862
+Epoch 4: Train loss = 0.0704, Train acc = 0.9780 | Val loss = 0.0458, Val acc = 0.9870
+Epoch 5: Train loss = 0.0633, Train acc = 0.9802 | Val loss = 0.0413, Val acc = 0.9873
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2159, Train acc = 0.9320 | Val loss = 0.0987, Val acc = 0.9720
+Epoch 2: Train loss = 0.0849, Train acc = 0.9736 | Val loss = 0.0780, Val acc = 0.9754
+Epoch 3: Train loss = 0.0625, Train acc = 0.9805 | Val loss = 0.0708, Val acc = 0.9798
+Epoch 4: Train loss = 0.0504, Train acc = 0.9845 | Val loss = 0.0525, Val acc = 0.9846
+Epoch 5: Train loss = 0.0422, Train acc = 0.9866 | Val loss = 0.0555, Val acc = 0.9841
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.3779, Train acc = 0.8803 | Val loss = 0.1062, Val acc = 0.9658
+Epoch 2: Train loss = 0.1655, Train acc = 0.9488 | Val loss = 0.0732, Val acc = 0.9774
+Epoch 3: Train loss = 0.1282, Train acc = 0.9606 | Val loss = 0.0691, Val acc = 0.9791
+Epoch 4: Train loss = 0.1080, Train acc = 0.9664 | Val loss = 0.0641, Val acc = 0.9807
+Epoch 5: Train loss = 0.0940, Train acc = 0.9705 | Val loss = 0.0589, Val acc = 0.9822
+
+Test accuracy FULL       : 0.985
+Test accuracy OPTIMIZED  : 0.984
+Test accuracy RANDOM-HALF: 0.982
+
+
+
+
+
+
+
+
+
+
+Troisième: (taille du dataset OPT : 100 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0525
+Autoencoder Epoch 2/10, Loss: 0.0244
+Autoencoder Epoch 3/10, Loss: 0.0193
+Autoencoder Epoch 4/10, Loss: 0.0176
+Autoencoder Epoch 5/10, Loss: 0.0167
+Autoencoder Epoch 6/10, Loss: 0.0160
+Autoencoder Epoch 7/10, Loss: 0.0155
+Autoencoder Epoch 8/10, Loss: 0.0151
+Autoencoder Epoch 9/10, Loss: 0.0146
+Autoencoder Epoch 10/10, Loss: 0.0143
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.663 (sigma = 0.791)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.975
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.011
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.983
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.019
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.988
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.247
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.016
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.911
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 100000
+  Random-half training set: 100000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2198, Train acc = 0.9313 | Val loss = 0.0689, Val acc = 0.9781
+Epoch 2: Train loss = 0.1015, Train acc = 0.9686 | Val loss = 0.0503, Val acc = 0.9845
+Epoch 3: Train loss = 0.0790, Train acc = 0.9753 | Val loss = 0.0480, Val acc = 0.9865
+Epoch 4: Train loss = 0.0681, Train acc = 0.9788 | Val loss = 0.0418, Val acc = 0.9874
+Epoch 5: Train loss = 0.0613, Train acc = 0.9807 | Val loss = 0.0466, Val acc = 0.9851
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2280, Train acc = 0.9293 | Val loss = 0.1038, Val acc = 0.9697
+Epoch 2: Train loss = 0.0788, Train acc = 0.9761 | Val loss = 0.0723, Val acc = 0.9788
+Epoch 3: Train loss = 0.0597, Train acc = 0.9817 | Val loss = 0.0573, Val acc = 0.9837
+Epoch 4: Train loss = 0.0475, Train acc = 0.9852 | Val loss = 0.0538, Val acc = 0.9829
+Epoch 5: Train loss = 0.0404, Train acc = 0.9875 | Val loss = 0.0554, Val acc = 0.9838
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.5330, Train acc = 0.8302 | Val loss = 0.1384, Val acc = 0.9568
+Epoch 2: Train loss = 0.2347, Train acc = 0.9284 | Val loss = 0.0961, Val acc = 0.9721
+Epoch 3: Train loss = 0.1843, Train acc = 0.9444 | Val loss = 0.0860, Val acc = 0.9742
+Epoch 4: Train loss = 0.1552, Train acc = 0.9525 | Val loss = 0.0723, Val acc = 0.9789
+Epoch 5: Train loss = 0.1368, Train acc = 0.9579 | Val loss = 0.0705, Val acc = 0.9796
+
+Test accuracy FULL       : 0.984
+Test accuracy OPTIMIZED  : 0.985
+Test accuracy RANDOM-HALF: 0.974
+
+
+
+
+
+
+
+
+
+
+
+
+Quatrième: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0525
+Autoencoder Epoch 2/10, Loss: 0.0247
+Autoencoder Epoch 3/10, Loss: 0.0199
+Autoencoder Epoch 4/10, Loss: 0.0180
+Autoencoder Epoch 5/10, Loss: 0.0170
+Autoencoder Epoch 6/10, Loss: 0.0163
+Autoencoder Epoch 7/10, Loss: 0.0157
+Autoencoder Epoch 8/10, Loss: 0.0153
+Autoencoder Epoch 9/10, Loss: 0.0149
+Autoencoder Epoch 10/10, Loss: 0.0145
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.094 (sigma = 0.770)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.979
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.988
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.990
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.988
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.946
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.217
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.097
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.913
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2560, Train acc = 0.9196 | Val loss = 0.0807, Val acc = 0.9738
+Epoch 2: Train loss = 0.1178, Train acc = 0.9638 | Val loss = 0.0565, Val acc = 0.9823
+Epoch 3: Train loss = 0.0930, Train acc = 0.9711 | Val loss = 0.0500, Val acc = 0.9831
+Epoch 4: Train loss = 0.0814, Train acc = 0.9747 | Val loss = 0.0453, Val acc = 0.9867
+Epoch 5: Train loss = 0.0736, Train acc = 0.9770 | Val loss = 0.0496, Val acc = 0.9849
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2473, Train acc = 0.9223 | Val loss = 0.0980, Val acc = 0.9683
+Epoch 2: Train loss = 0.0893, Train acc = 0.9728 | Val loss = 0.0785, Val acc = 0.9761
+Epoch 3: Train loss = 0.0668, Train acc = 0.9795 | Val loss = 0.0760, Val acc = 0.9768
+Epoch 4: Train loss = 0.0544, Train acc = 0.9834 | Val loss = 0.0614, Val acc = 0.9796
+Epoch 5: Train loss = 0.0461, Train acc = 0.9856 | Val loss = 0.0481, Val acc = 0.9852
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4604, Train acc = 0.8517 | Val loss = 0.1241, Val acc = 0.9630
+Epoch 2: Train loss = 0.2133, Train acc = 0.9334 | Val loss = 0.0904, Val acc = 0.9735
+Epoch 3: Train loss = 0.1673, Train acc = 0.9479 | Val loss = 0.0786, Val acc = 0.9776
+Epoch 4: Train loss = 0.1386, Train acc = 0.9573 | Val loss = 0.0773, Val acc = 0.9763
+Epoch 5: Train loss = 0.1245, Train acc = 0.9619 | Val loss = 0.0713, Val acc = 0.9789
+
+Test accuracy FULL       : 0.980
+Test accuracy OPTIMIZED  : 0.988
+Test accuracy RANDOM-HALF: 0.975
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cinquième test: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0528
+Autoencoder Epoch 2/10, Loss: 0.0249
+Autoencoder Epoch 3/10, Loss: 0.0200
+Autoencoder Epoch 4/10, Loss: 0.0180
+Autoencoder Epoch 5/10, Loss: 0.0170
+Autoencoder Epoch 6/10, Loss: 0.0163
+Autoencoder Epoch 7/10, Loss: 0.0157
+Autoencoder Epoch 8/10, Loss: 0.0152
+Autoencoder Epoch 9/10, Loss: 0.0148
+Autoencoder Epoch 10/10, Loss: 0.0145
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 21.031 (sigma = 0.798)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.959
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.962
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.972
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.027
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.975
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.144
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.017
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.926
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2721, Train acc = 0.9149 | Val loss = 0.0715, Val acc = 0.9790
+Epoch 2: Train loss = 0.1306, Train acc = 0.9601 | Val loss = 0.0632, Val acc = 0.9802
+Epoch 3: Train loss = 0.1058, Train acc = 0.9674 | Val loss = 0.0586, Val acc = 0.9810
+Epoch 4: Train loss = 0.0942, Train acc = 0.9707 | Val loss = 0.0483, Val acc = 0.9842
+Epoch 5: Train loss = 0.0857, Train acc = 0.9735 | Val loss = 0.0599, Val acc = 0.9808
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2261, Train acc = 0.9306 | Val loss = 0.0847, Val acc = 0.9736
+Epoch 2: Train loss = 0.0815, Train acc = 0.9749 | Val loss = 0.0676, Val acc = 0.9797
+Epoch 3: Train loss = 0.0624, Train acc = 0.9803 | Val loss = 0.0667, Val acc = 0.9802
+Epoch 4: Train loss = 0.0519, Train acc = 0.9837 | Val loss = 0.0513, Val acc = 0.9852
+Epoch 5: Train loss = 0.0456, Train acc = 0.9854 | Val loss = 0.0454, Val acc = 0.9864
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4207, Train acc = 0.8672 | Val loss = 0.1230, Val acc = 0.9621
+Epoch 2: Train loss = 0.2076, Train acc = 0.9360 | Val loss = 0.0913, Val acc = 0.9723
+Epoch 3: Train loss = 0.1587, Train acc = 0.9508 | Val loss = 0.0741, Val acc = 0.9788
+Epoch 4: Train loss = 0.1337, Train acc = 0.9585 | Val loss = 0.0664, Val acc = 0.9796
+Epoch 5: Train loss = 0.1162, Train acc = 0.9634 | Val loss = 0.0657, Val acc = 0.9792
+
+Test accuracy FULL       : 0.978
+Test accuracy OPTIMIZED  : 0.987
+Test accuracy RANDOM-HALF: 0.978
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sixième: (taille du dataset OPT : 150 000)  
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0530
+Autoencoder Epoch 2/10, Loss: 0.0247
+Autoencoder Epoch 3/10, Loss: 0.0199
+Autoencoder Epoch 4/10, Loss: 0.0180
+Autoencoder Epoch 5/10, Loss: 0.0169
+Autoencoder Epoch 6/10, Loss: 0.0161
+Autoencoder Epoch 7/10, Loss: 0.0155
+Autoencoder Epoch 8/10, Loss: 0.0150
+Autoencoder Epoch 9/10, Loss: 0.0146
+Autoencoder Epoch 10/10, Loss: 0.0143
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.727 (sigma = 0.795)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.001
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.015
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.969
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.003
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.963
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.190
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.099
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.930
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2550, Train acc = 0.9203 | Val loss = 0.0700, Val acc = 0.9798
+Epoch 2: Train loss = 0.1222, Train acc = 0.9623 | Val loss = 0.0596, Val acc = 0.9826
+Epoch 3: Train loss = 0.0978, Train acc = 0.9695 | Val loss = 0.0614, Val acc = 0.9802
+Epoch 4: Train loss = 0.0853, Train acc = 0.9731 | Val loss = 0.0545, Val acc = 0.9837
+Epoch 5: Train loss = 0.0777, Train acc = 0.9756 | Val loss = 0.0476, Val acc = 0.9848
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2453, Train acc = 0.9234 | Val loss = 0.1197, Val acc = 0.9606
+Epoch 2: Train loss = 0.0887, Train acc = 0.9725 | Val loss = 0.0693, Val acc = 0.9788
+Epoch 3: Train loss = 0.0657, Train acc = 0.9793 | Val loss = 0.0602, Val acc = 0.9808
+Epoch 4: Train loss = 0.0535, Train acc = 0.9832 | Val loss = 0.0590, Val acc = 0.9824
+Epoch 5: Train loss = 0.0460, Train acc = 0.9852 | Val loss = 0.0533, Val acc = 0.9847
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.3958, Train acc = 0.8757 | Val loss = 0.1081, Val acc = 0.9674
+Epoch 2: Train loss = 0.1689, Train acc = 0.9480 | Val loss = 0.0772, Val acc = 0.9783
+Epoch 3: Train loss = 0.1284, Train acc = 0.9599 | Val loss = 0.0709, Val acc = 0.9772
+Epoch 4: Train loss = 0.1077, Train acc = 0.9664 | Val loss = 0.0546, Val acc = 0.9836
+Epoch 5: Train loss = 0.0940, Train acc = 0.9708 | Val loss = 0.0613, Val acc = 0.9814
+
+Test accuracy FULL       : 0.983
+Test accuracy OPTIMIZED  : 0.985
+Test accuracy RANDOM-HALF: 0.978
+
+
+
+
+
+
+
+
+
+
+
+
+
+septieme: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0541
+Autoencoder Epoch 2/10, Loss: 0.0259
+Autoencoder Epoch 3/10, Loss: 0.0201
+Autoencoder Epoch 4/10, Loss: 0.0181
+Autoencoder Epoch 5/10, Loss: 0.0171
+Autoencoder Epoch 6/10, Loss: 0.0164
+Autoencoder Epoch 7/10, Loss: 0.0158
+Autoencoder Epoch 8/10, Loss: 0.0154
+Autoencoder Epoch 9/10, Loss: 0.0150
+Autoencoder Epoch 10/10, Loss: 0.0146
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.443 (sigma = 0.796)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.005
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.001
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.970
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.999
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.969
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.161
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.090
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.926
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.3184, Train acc = 0.8994 | Val loss = 0.0899, Val acc = 0.9735
+Epoch 2: Train loss = 0.1536, Train acc = 0.9523 | Val loss = 0.0745, Val acc = 0.9774
+Epoch 3: Train loss = 0.1259, Train acc = 0.9607 | Val loss = 0.0584, Val acc = 0.9825
+Epoch 4: Train loss = 0.1109, Train acc = 0.9653 | Val loss = 0.0588, Val acc = 0.9830
+Epoch 5: Train loss = 0.1009, Train acc = 0.9682 | Val loss = 0.0525, Val acc = 0.9842
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2336, Train acc = 0.9267 | Val loss = 0.0952, Val acc = 0.9696
+Epoch 2: Train loss = 0.0855, Train acc = 0.9733 | Val loss = 0.0664, Val acc = 0.9806
+Epoch 3: Train loss = 0.0639, Train acc = 0.9804 | Val loss = 0.0539, Val acc = 0.9841
+Epoch 4: Train loss = 0.0521, Train acc = 0.9835 | Val loss = 0.0541, Val acc = 0.9833
+Epoch 5: Train loss = 0.0437, Train acc = 0.9862 | Val loss = 0.0488, Val acc = 0.9860
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4338, Train acc = 0.8615 | Val loss = 0.1412, Val acc = 0.9546
+Epoch 2: Train loss = 0.2027, Train acc = 0.9375 | Val loss = 0.0941, Val acc = 0.9719
+Epoch 3: Train loss = 0.1620, Train acc = 0.9502 | Val loss = 0.0840, Val acc = 0.9742
+Epoch 4: Train loss = 0.1360, Train acc = 0.9584 | Val loss = 0.0711, Val acc = 0.9777
+Epoch 5: Train loss = 0.1214, Train acc = 0.9629 | Val loss = 0.0852, Val acc = 0.9733
+
+Test accuracy FULL       : 0.983
+Test accuracy OPTIMIZED  : 0.985
+Test accuracy RANDOM-HALF: 0.970
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+huitieme: (taille du dataset OPT : 100 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0526
+Autoencoder Epoch 2/10, Loss: 0.0251
+Autoencoder Epoch 3/10, Loss: 0.0200
+Autoencoder Epoch 4/10, Loss: 0.0181
+Autoencoder Epoch 5/10, Loss: 0.0171
+Autoencoder Epoch 6/10, Loss: 0.0164
+Autoencoder Epoch 7/10, Loss: 0.0158
+Autoencoder Epoch 8/10, Loss: 0.0153
+Autoencoder Epoch 9/10, Loss: 0.0149
+Autoencoder Epoch 10/10, Loss: 0.0145
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.328 (sigma = 0.797)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.007
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.009
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.964
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.997
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.974
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.027
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 0.984
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.977
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 100000
+  Random-half training set: 100000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2405, Train acc = 0.9246 | Val loss = 0.0839, Val acc = 0.9747
+Epoch 2: Train loss = 0.1055, Train acc = 0.9671 | Val loss = 0.0580, Val acc = 0.9829
+Epoch 3: Train loss = 0.0862, Train acc = 0.9732 | Val loss = 0.0483, Val acc = 0.9843
+Epoch 4: Train loss = 0.0765, Train acc = 0.9760 | Val loss = 0.0446, Val acc = 0.9860
+Epoch 5: Train loss = 0.0701, Train acc = 0.9777 | Val loss = 0.0513, Val acc = 0.9841
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2767, Train acc = 0.9129 | Val loss = 0.1081, Val acc = 0.9673
+Epoch 2: Train loss = 0.0885, Train acc = 0.9725 | Val loss = 0.0715, Val acc = 0.9793
+Epoch 3: Train loss = 0.0641, Train acc = 0.9800 | Val loss = 0.0616, Val acc = 0.9826
+Epoch 4: Train loss = 0.0510, Train acc = 0.9841 | Val loss = 0.0516, Val acc = 0.9838
+Epoch 5: Train loss = 0.0438, Train acc = 0.9860 | Val loss = 0.0516, Val acc = 0.9854
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.5168, Train acc = 0.8330 | Val loss = 0.1379, Val acc = 0.9591
+Epoch 2: Train loss = 0.2278, Train acc = 0.9294 | Val loss = 0.1047, Val acc = 0.9692
+Epoch 3: Train loss = 0.1662, Train acc = 0.9485 | Val loss = 0.0881, Val acc = 0.9741
+Epoch 4: Train loss = 0.1366, Train acc = 0.9579 | Val loss = 0.0877, Val acc = 0.9756
+Epoch 5: Train loss = 0.1186, Train acc = 0.9632 | Val loss = 0.0758, Val acc = 0.9769
+
+Test accuracy FULL       : 0.982
+Test accuracy OPTIMIZED  : 0.986
+Test accuracy RANDOM-HALF: 0.976
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neuvième: (taille du dataset OPT : 150 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0517
+Autoencoder Epoch 2/10, Loss: 0.0250
+Autoencoder Epoch 3/10, Loss: 0.0204
+Autoencoder Epoch 4/10, Loss: 0.0184
+Autoencoder Epoch 5/10, Loss: 0.0172
+Autoencoder Epoch 6/10, Loss: 0.0164
+Autoencoder Epoch 7/10, Loss: 0.0158
+Autoencoder Epoch 8/10, Loss: 0.0154
+Autoencoder Epoch 9/10, Loss: 0.0150
+Autoencoder Epoch 10/10, Loss: 0.0146
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.657 (sigma = 0.766)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.013
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.013
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.001
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.994
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.919
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.147
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.093
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.948
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 150000
+  Random-half training set: 150000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2298, Train acc = 0.9281 | Val loss = 0.0609, Val acc = 0.9819
+Epoch 2: Train loss = 0.1023, Train acc = 0.9684 | Val loss = 0.0553, Val acc = 0.9831
+Epoch 3: Train loss = 0.0829, Train acc = 0.9744 | Val loss = 0.0588, Val acc = 0.9813
+Epoch 4: Train loss = 0.0720, Train acc = 0.9775 | Val loss = 0.0391, Val acc = 0.9874
+Epoch 5: Train loss = 0.0653, Train acc = 0.9794 | Val loss = 0.0427, Val acc = 0.9864
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2486, Train acc = 0.9212 | Val loss = 0.1029, Val acc = 0.9694
+Epoch 2: Train loss = 0.0910, Train acc = 0.9724 | Val loss = 0.0856, Val acc = 0.9721
+Epoch 3: Train loss = 0.0655, Train acc = 0.9794 | Val loss = 0.0595, Val acc = 0.9821
+Epoch 4: Train loss = 0.0525, Train acc = 0.9836 | Val loss = 0.0530, Val acc = 0.9842
+Epoch 5: Train loss = 0.0452, Train acc = 0.9856 | Val loss = 0.0502, Val acc = 0.9851
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4118, Train acc = 0.8690 | Val loss = 0.1218, Val acc = 0.9641
+Epoch 2: Train loss = 0.1944, Train acc = 0.9400 | Val loss = 0.0890, Val acc = 0.9729
+Epoch 3: Train loss = 0.1472, Train acc = 0.9549 | Val loss = 0.0794, Val acc = 0.9755
+Epoch 4: Train loss = 0.1248, Train acc = 0.9614 | Val loss = 0.0717, Val acc = 0.9783
+Epoch 5: Train loss = 0.1118, Train acc = 0.9655 | Val loss = 0.0679, Val acc = 0.9786
+
+Test accuracy FULL       : 0.984
+Test accuracy OPTIMIZED  : 0.985
+Test accuracy RANDOM-HALF: 0.977
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dixieme: (taille du dataset OPT : 100 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0517
+Autoencoder Epoch 2/10, Loss: 0.0245
+Autoencoder Epoch 3/10, Loss: 0.0197
+Autoencoder Epoch 4/10, Loss: 0.0179
+Autoencoder Epoch 5/10, Loss: 0.0169
+Autoencoder Epoch 6/10, Loss: 0.0161
+Autoencoder Epoch 7/10, Loss: 0.0156
+Autoencoder Epoch 8/10, Loss: 0.0151
+Autoencoder Epoch 9/10, Loss: 0.0147
+Autoencoder Epoch 10/10, Loss: 0.0143
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.458 (sigma = 0.754)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.989
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.978
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.954
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.009
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.935
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.149
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.018
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.945
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 100000
+  Random-half training set: 100000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2188, Train acc = 0.9320 | Val loss = 0.0683, Val acc = 0.9799
+Epoch 2: Train loss = 0.1020, Train acc = 0.9688 | Val loss = 0.0584, Val acc = 0.9837
+Epoch 3: Train loss = 0.0820, Train acc = 0.9747 | Val loss = 0.0465, Val acc = 0.9861
+Epoch 4: Train loss = 0.0716, Train acc = 0.9780 | Val loss = 0.0459, Val acc = 0.9859
+Epoch 5: Train loss = 0.0644, Train acc = 0.9798 | Val loss = 0.0507, Val acc = 0.9849
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2615, Train acc = 0.9184 | Val loss = 0.1084, Val acc = 0.9696
+Epoch 2: Train loss = 0.0911, Train acc = 0.9718 | Val loss = 0.0788, Val acc = 0.9771
+Epoch 3: Train loss = 0.0690, Train acc = 0.9787 | Val loss = 0.0709, Val acc = 0.9797
+Epoch 4: Train loss = 0.0563, Train acc = 0.9825 | Val loss = 0.0632, Val acc = 0.9815
+Epoch 5: Train loss = 0.0481, Train acc = 0.9847 | Val loss = 0.0639, Val acc = 0.9812
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.5264, Train acc = 0.8315 | Val loss = 0.1549, Val acc = 0.9536
+Epoch 2: Train loss = 0.2516, Train acc = 0.9231 | Val loss = 0.1076, Val acc = 0.9665
+Epoch 3: Train loss = 0.1956, Train acc = 0.9398 | Val loss = 0.0978, Val acc = 0.9716
+Epoch 4: Train loss = 0.1691, Train acc = 0.9474 | Val loss = 0.0830, Val acc = 0.9760
+Epoch 5: Train loss = 0.1521, Train acc = 0.9526 | Val loss = 0.0899, Val acc = 0.9739
+
+Test accuracy FULL       : 0.981
+Test accuracy OPTIMIZED  : 0.983
+Test accuracy RANDOM-HALF: 0.970
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+onzieme : (taille du dataset OPT : 100 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/10, Loss: 0.0537
+Autoencoder Epoch 2/10, Loss: 0.0241
+Autoencoder Epoch 3/10, Loss: 0.0194
+Autoencoder Epoch 4/10, Loss: 0.0177
+Autoencoder Epoch 5/10, Loss: 0.0167
+Autoencoder Epoch 6/10, Loss: 0.0159
+Autoencoder Epoch 7/10, Loss: 0.0153
+Autoencoder Epoch 8/10, Loss: 0.0148
+Autoencoder Epoch 9/10, Loss: 0.0144
+Autoencoder Epoch 10/10, Loss: 0.0141
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 20.795 (sigma = 0.744)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.000
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 0.991
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.972
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.013
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 0.980
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 1.240
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 1.000
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.956
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 100000
+  Random-half training set: 100000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2349, Train acc = 0.9265 | Val loss = 0.0667, Val acc = 0.9802
+Epoch 2: Train loss = 0.1031, Train acc = 0.9681 | Val loss = 0.0460, Val acc = 0.9859
+Epoch 3: Train loss = 0.0835, Train acc = 0.9741 | Val loss = 0.0513, Val acc = 0.9848
+Epoch 4: Train loss = 0.0732, Train acc = 0.9768 | Val loss = 0.0434, Val acc = 0.9867
+Epoch 5: Train loss = 0.0666, Train acc = 0.9791 | Val loss = 0.0471, Val acc = 0.9860
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.2554, Train acc = 0.9211 | Val loss = 0.1211, Val acc = 0.9640
+Epoch 2: Train loss = 0.0856, Train acc = 0.9734 | Val loss = 0.0746, Val acc = 0.9790
+Epoch 3: Train loss = 0.0650, Train acc = 0.9799 | Val loss = 0.0623, Val acc = 0.9817
+Epoch 4: Train loss = 0.0532, Train acc = 0.9832 | Val loss = 0.0551, Val acc = 0.9830
+Epoch 5: Train loss = 0.0453, Train acc = 0.9859 | Val loss = 0.0562, Val acc = 0.9836
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.4952, Train acc = 0.8435 | Val loss = 0.1424, Val acc = 0.9572
+Epoch 2: Train loss = 0.2155, Train acc = 0.9332 | Val loss = 0.1091, Val acc = 0.9661
+Epoch 3: Train loss = 0.1620, Train acc = 0.9493 | Val loss = 0.0783, Val acc = 0.9771
+Epoch 4: Train loss = 0.1324, Train acc = 0.9588 | Val loss = 0.0786, Val acc = 0.9762
+Epoch 5: Train loss = 0.1135, Train acc = 0.9653 | Val loss = 0.0762, Val acc = 0.9760
+
+Test accuracy FULL       : 0.984
+Test accuracy OPTIMIZED  : 0.986
+Test accuracy RANDOM-HALF: 0.976
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+douzième: (taille du dataset OPT : 50 000)
+
+Loaded MNIST:
+  Training set size: (50000, 28, 28) Labels: (50000,)
+  Validation set size: (10000, 28, 28) Labels: (10000,)
+  Test set size: (10000, 28, 28) Labels: (10000,)
+
+Training Autoencoder on base training set...
+Autoencoder Epoch 1/40, Loss: 0.0396
+Autoencoder Epoch 2/40, Loss: 0.0199
+Autoencoder Epoch 3/40, Loss: 0.0172
+Autoencoder Epoch 4/40, Loss: 0.0159
+Autoencoder Epoch 5/40, Loss: 0.0150
+Autoencoder Epoch 6/40, Loss: 0.0144
+Autoencoder Epoch 7/40, Loss: 0.0139
+Autoencoder Epoch 8/40, Loss: 0.0135
+Autoencoder Epoch 9/40, Loss: 0.0132
+Autoencoder Epoch 10/40, Loss: 0.0130
+Autoencoder Epoch 11/40, Loss: 0.0128
+Autoencoder Epoch 12/40, Loss: 0.0126
+Autoencoder Epoch 13/40, Loss: 0.0124
+Autoencoder Epoch 14/40, Loss: 0.0122
+Autoencoder Epoch 15/40, Loss: 0.0121
+Autoencoder Epoch 16/40, Loss: 0.0119
+Autoencoder Epoch 17/40, Loss: 0.0118
+Autoencoder Epoch 18/40, Loss: 0.0117
+Autoencoder Epoch 19/40, Loss: 0.0116
+Autoencoder Epoch 20/40, Loss: 0.0115
+Autoencoder Epoch 21/40, Loss: 0.0115
+Autoencoder Epoch 22/40, Loss: 0.0114
+Autoencoder Epoch 23/40, Loss: 0.0113
+Autoencoder Epoch 24/40, Loss: 0.0113
+Autoencoder Epoch 25/40, Loss: 0.0112
+Autoencoder Epoch 26/40, Loss: 0.0111
+Autoencoder Epoch 27/40, Loss: 0.0111
+Autoencoder Epoch 28/40, Loss: 0.0110
+Autoencoder Epoch 29/40, Loss: 0.0110
+Autoencoder Epoch 30/40, Loss: 0.0109
+Autoencoder Epoch 31/40, Loss: 0.0109
+Autoencoder Epoch 32/40, Loss: 0.0108
+Autoencoder Epoch 33/40, Loss: 0.0108
+Autoencoder Epoch 34/40, Loss: 0.0108
+Autoencoder Epoch 35/40, Loss: 0.0107
+Autoencoder Epoch 36/40, Loss: 0.0107
+Autoencoder Epoch 37/40, Loss: 0.0107
+Autoencoder Epoch 38/40, Loss: 0.0106
+Autoencoder Epoch 39/40, Loss: 0.0106
+Autoencoder Epoch 40/40, Loss: 0.0106
+
+Computing Vendi Score for original dataset...
+Vendi(D) = 22.394 (sigma = 0.912)
+Horizontal Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.007
+Vertical Flip: Vendi(D ∪ g(D)) / Vendi(D) = 1.006
+Rotate +10°: Vendi(D ∪ g(D)) / Vendi(D) = 0.984
+Rotate -10°: Vendi(D ∪ g(D)) / Vendi(D) = 1.009
+Small Noise: Vendi(D ∪ g(D)) / Vendi(D) = 1.014
+Translate Horizontal: Vendi(D ∪ g(D)) / Vendi(D) = 0.960
+Translate Vertical: Vendi(D ∪ g(D)) / Vendi(D) = 0.989
+Scale 90%: Vendi(D ∪ g(D)) / Vendi(D) = 0.984
+Redundant transforms (to omit): ['Horizontal Flip', 'Vertical Flip', 'Rotate +10°', 'Rotate -10°', 'Small Noise', 'Translate Horizontal', 'Translate Vertical', 'Scale 90%']
+
+Dataset sizes:
+  Base training set: 50000
+  Full training set: 450000
+  Optimized training set: 50000
+  Random-half training set: 50000
+
+Training on FULL dataset...
+Epoch 1: Train loss = 0.2564, Train acc = 0.9201 | Val loss = 0.0753, Val acc = 0.9773
+Epoch 2: Train loss = 0.1233, Train acc = 0.9619 | Val loss = 0.0807, Val acc = 0.9755
+Epoch 3: Train loss = 0.1018, Train acc = 0.9684 | Val loss = 0.0746, Val acc = 0.9783
+Epoch 4: Train loss = 0.0905, Train acc = 0.9718 | Val loss = 0.0603, Val acc = 0.9815
+Epoch 5: Train loss = 0.0830, Train acc = 0.9742 | Val loss = 0.0696, Val acc = 0.9792
+
+Training on OPTIMIZED dataset...
+Epoch 1: Train loss = 0.3124, Train acc = 0.9064 | Val loss = 0.1189, Val acc = 0.9638
+Epoch 2: Train loss = 0.1007, Train acc = 0.9694 | Val loss = 0.1010, Val acc = 0.9690
+Epoch 3: Train loss = 0.0748, Train acc = 0.9774 | Val loss = 0.0653, Val acc = 0.9798
+Epoch 4: Train loss = 0.0615, Train acc = 0.9810 | Val loss = 0.0644, Val acc = 0.9787
+Epoch 5: Train loss = 0.0506, Train acc = 0.9843 | Val loss = 0.0528, Val acc = 0.9840
+
+Training on RANDOM-HALF dataset...
+Epoch 1: Train loss = 0.6456, Train acc = 0.7927 | Val loss = 0.1996, Val acc = 0.9410
+Epoch 2: Train loss = 0.2834, Train acc = 0.9123 | Val loss = 0.1459, Val acc = 0.9558
+Epoch 3: Train loss = 0.2114, Train acc = 0.9353 | Val loss = 0.1359, Val acc = 0.9605
+Epoch 4: Train loss = 0.1753, Train acc = 0.9475 | Val loss = 0.1110, Val acc = 0.9657
+Epoch 5: Train loss = 0.1481, Train acc = 0.9550 | Val loss = 0.1109, Val acc = 0.9670
+
+Test accuracy FULL       : 0.981
+Test accuracy OPTIMIZED  : 0.985
+Test accuracy RANDOM-HALF: 0.970
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La manière que j'avais en tête d'implémenter cela était de prendre une première image (d'un certain chiffre donc dans le dataset MNIST) avec un label (entre 0 et 9), et de s'en servir comme référence. Si l'on prend toujours l'exemple de la rotation par exemple, il faudrait ainsi pour toutes les autres images, les comparer à cette référence afin d'en déterminer un angle
